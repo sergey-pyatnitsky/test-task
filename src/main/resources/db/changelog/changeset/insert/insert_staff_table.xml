@@ -1,0 +1,26 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <changeSet id="insert-staff-table" author="Pyatnitsky">
+        <insert tableName="staff">
+            <column  name="name"  value="Иванов Иван Иванович"/>
+            <column  name="age"  value="55"/>
+            <column  name="username"  value="user"/>
+            <column  name="department_id"  value="1"/>
+        </insert>
+        <insert tableName="staff">
+            <column  name="name"  value="Новиков Назар Сергеевич"/>
+            <column  name="age"  value="20"/>
+            <column  name="username"  value="user1"/>
+            <column  name="department_id"  value="1"/>
+        </insert>
+        <insert tableName="staff">
+            <column  name="name"  value="Капун Игорь Григорьевич"/>
+            <column  name="age"  value="23"/>
+            <column  name="username"  value="user2"/>
+            <column  name="department_id"  value="2"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
